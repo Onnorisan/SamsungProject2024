@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".rules"
+    android:background="@color/black">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="40dp"
+        android:layout_marginTop="70dp"
+        android:text="Правила игры"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:id="@+id/rule1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:text="1. Читайте диалоги внимательно. В них может быть правильный ответ на следующий вопрос"
+        android:layout_marginTop="150dp"/>
+    <TextView
+        android:id="@+id/rule2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:text="2. Если вы ответили на вопрос неверно первый раз-снимается 5 очков, второй раз-снимается 10 очков."
+        android:layout_below="@+id/rule1"/>
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="50dp"
+        android:text="Удачи!"
+        android:textColor="@color/white"
+        android:layout_below="@+id/rule2"
+        android:layout_marginTop="70dp"
+        android:layout_centerHorizontal="true"/>
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Назад"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/white"
+        android:textSize="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/text"
+        android:layout_marginTop="80dp"/>
+
+</RelativeLayout>
